@@ -1,0 +1,25 @@
+
+//layout
+$max-width:  1200px;
+$bp-tablet:  768px;
+$bp-desktop: 992px;
+$marge:      15px;
+
+
+//typos
+$font-default:'Trebuchet MS', sans-serif;
+$font-title:'Raleway', $font-default;
+//passe la taille de la typo de 16 a 14px donc ensuite 1em=14
+$font-size-base: 100%;
+
+
+//color
+$green:      #43683c;
+$gray:       #cfcfcf;
+$dark-gray:  #a7a7a7;
+$light-gray: #e5e5e5;
+$yellow:     #b09810;
+$white:      #FFF;
+$black:      #000;
+
+$link-color: $green;

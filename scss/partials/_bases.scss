@@ -1,0 +1,395 @@
+//===========================================
+//                 base
+//===========================================
+
+html {
+  font-size: $font-size-base;
+  font-family: $font-default;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+// .container {
+//   max-width: $max-width;
+//   margin: 0 auto;
+//   padding: 0 $marge;
+// }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-title;
+  font-weight: normal;
+  color: $green;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+footer,
+header {
+  a {
+    color: $white;
+  }
+}
+//===========================================
+//                 header
+//===========================================
+
+#page-header {
+  min-height: 50vh;
+  background: url("../images/bg_header.jpg") center;
+  background-size: cover;
+  color: $white;
+}
+
+.logo p {
+  text-align: center;
+}
+//burger
+
+#mobile-header {
+  position: absolute;
+  top: $marge;
+  right: $marge;
+
+  .burger {
+    font-size: 0;
+
+    .fa {
+      font-size: 3rem;
+      color: $light-gray;
+    }
+  }
+}
+//centrer elements
+
+#header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+//cache le titre
+
+#site-title {
+  font-size: 0;
+}
+//cache les elements de la nav apparent
+
+#main-nav {
+  display: none;
+}
+//champs de recherche
+
+.search-form {
+  display: flex;
+  margin-top: 30px;
+  background-color: rgba($light-gray, 0.3);
+  //[]pour etre sur de viser le champs text
+  input[type="text"] {
+    border: 0;
+    background: none;
+    color: $dark-gray;
+    padding: 1rem 1.5rem;
+    transition: background 0.3s;
+    //& pour associer avec le parent (ici l input)
+    &:focus {
+      background: rgba($light-gray, 0.5);
+      outline-color: $dark-gray;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+  //on sort de input apres  } de l input
+  //on s occupe de la loupe
+  button[type="submit"] {
+    border: 0;
+    background: none;
+    font-size: 0;
+    color: $white;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    .fa {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      background: rgba($light-gray, 0.5);
+    }
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  margin-top: 20px;
+
+  .fa-phone {
+    padding-top: 20px;
+  }
+}
+
+.conform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connexion h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#connect {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    margin-top: 22px;
+  }
+
+  ul li a:hover {
+    color: rgba($green, 0.5);
+  }
+}
+
+.responsable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $black;
+    text-decoration: none;
+  }
+}
+//===========================================
+//                 main
+//===========================================
+
+h1 {
+  font-size: 0;
+}
+
+#slider {
+  //fleche nav fontawsome
+  .owl-nav {
+    button {
+      position: absolute;
+      top: calc(50% - 1rem);
+      font-size: 0;
+
+      &::before {
+        content: '\f359';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 3rem;
+        color: #fff;
+      }
+
+      &:hover::before {
+        color: lighten($green, 10%);
+      }
+
+      &.owl-next::before {
+        content: '\f35a';
+      }
+
+      &.owl-prev {
+        left: 15px;
+      }
+
+      &.owl-next {
+        right: 15px;
+      }
+    }
+  }
+}
+
+#top3,
+.articlebody {
+  text-align: center;
+  max-width: 638px;
+  margin: 0 auto;
+}
+//===========================================
+//                Promotion
+//===========================================
+
+#promotion {
+  background: url("../images/spirale-j.svg") center no-repeat;
+  background-size: contain;
+  min-width: 380px;
+  min-height: 210px;
+}
+
+.prom {
+  img {
+    // width: 70%;
+    height: auto;
+  }
+}
+
+.comprom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.com {
+  background: url("../images/points-cardinaux.svg") no-repeat right center;
+  background-size: contain;
+  padding: 1rem 3rem 1rem 0;
+}
+
+#top3 {
+  background: url("../images/solstice.svg") center top no-repeat;
+  background-size: contain;
+  min-width: 370px;
+  min-height: 250px;
+  padding-top: 50px;
+
+  .tailrond {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.cont-img {
+  position: relative;
+  max-width: 313px;
+  margin: 0 auto;
+
+  .niveau {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.details {
+  background: url("../images/rond.svg") center no-repeat;
+  background-size: contain;
+  padding: 1.5rem 0.875rem;
+
+  &:focus,
+  &:hover {
+    color: lighten($green, 20%);
+    text-decoration: none;
+  }
+}
+
+.top article{
+  margin-bottom: 50px;
+}
+//===========================================
+//                 footer
+//===========================================
+
+footer {
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+  }
+}
+
+footer {
+  //background-color: $green;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  background: url("../images/footer-img.jpg") center;
+  background-size: cover;
+  color: #fff;
+  padding: 30px;
+
+  .footer-col {
+    padding: 30px;
+    display: flex;
+    // h3 {
+    //   color: $light-gray;
+    //   @include puce(1.25rem, #fff);
+    // }
+    // p {
+    //   font-size: 0.875rem;
+    // }
+    // ul {
+    //   padding: 0 1rem;
+    //   font-size: 0.875rem;
+    //
+    //   li {
+    //     margin-bottom: 1rem;
+    //   }
+    // }
+  }
+}
+//reseau sociaux
+
+#social-nav {
+  margin: 30px 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 15px;
+
+      a {
+        color: #fff;
+        font-size: 0;
+        transition: 0.3s;
+
+        &:hover {
+          color: lighten($green, 20%);
+        }
+
+        .fab {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.conform {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.responsable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $black;
+    img{
+      margin: 0 20px 0 20px;
+    }
+  }
+  .compenser {
+    flex-direction: row-reverse;
+    padding-left: 40px;
+  }
+  .calculer {
+    padding-right: 40px;
+  }
+
+
+}
+
+//passer relaisation et tout ce bloc sur la droite
+
+
+#top3 {
+  background-size: 50%;
+}
+
+//===========================================
+//                Promotion
+//===========================================

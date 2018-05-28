@@ -1,0 +1,50 @@
+
+#mobile-header {
+  display: none;
+}
+
+#header-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#main-nav {
+  display: block;
+
+  ul {
+    display: flex;
+  }
+  a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 1rem;
+
+    &:hover, &:focus {
+      color: lighten($green, 20%);
+      text-decoration: none;
+    }
+  }
+}
+
+.phone {
+  margin-top: 0;
+}
+
+//descendre les fleches du slider
+/*#slider{
+  padding: 80px 60px;
+  .btn{
+    margin-top: auto;
+  }
+  .item .item-img{
+    margin-bottom: 0;
+  }
+  .owl-nav button{
+    top: calc(50% - 1.5rem);
+  }
+}*/
+#top3 {
+  background-size: 30%;
+}

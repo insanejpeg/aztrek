@@ -1,0 +1,7 @@
+.idea/
+/nbproject/
+*.bak
+.sass-cache/
+config/parameters.php
+uploads/
+admin/node_modules/
