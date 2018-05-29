@@ -14,12 +14,11 @@ getHeader("séjours");
 
 <h2><?php echo $pays["label"]; ?></h2>
 
-    <?php foreach ($list_sejours as $sejour) : ?>
+<?php foreach ($list_sejours as $sejour) : ?>
 
-<h2><?php echo $sejour["title"]; ?></h2>
-    <p><?php echo $sejour["description"]; ?></p>
-        
-    <?php endforeach; ?>
+    <?php include 'include/sejour_inc.php'; ?>
+
+<?php endforeach; ?>
 
 
 <?php getFooter(); ?>

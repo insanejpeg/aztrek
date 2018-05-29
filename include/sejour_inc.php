@@ -1,14 +1,12 @@
-<article class="action">
-                   
-                                <?php if(is_numeric($project["grade"])) : ?>
-                                
-                                    <?php for($i = 0; $i < 5; $i++) : ?>
-                                            <?php if($project["grade"] > $i) : ?>
-                                <i class="fa fa-star"></i>
-                                            <?php else : ?>
-                                <i class="fa fa-star-o"></i>
-                                            <?php endif; ?>
-                                     <?php endfor; ?>
-                                <?php endif; ?>
-                               
-                </article>
+<article>
+
+    <h2><?php echo $sejour["title"]; ?></h2>
+    <p><?php echo $sejour["description"]; ?></p>
+    <img class="niveau" src="./images/<?php echo $sejour["niveau_picto"]; ?>" alt="glyph-niveau" height="35px" width="35px">
+
+</article>
+
+
+
+
+<!--<img class="niveau" src="./images/monkey.svg" alt="glyph-niveau" height="35px" width="35px">-->
