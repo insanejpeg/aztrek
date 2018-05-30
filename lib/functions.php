@@ -1,8 +1,9 @@
 <?php
+require_once __DIR__ . '/../model/database.php';
+
 if (!isset($_SESSION)){
     session_start();
 }
-
 
 /**
  * Debugger une variable
@@ -17,7 +18,6 @@ function debug($var, bool $die = true) {
         die;
     }
 }
-
 
 function currentUser() {
     if (isset($_SESSION["id"])) {

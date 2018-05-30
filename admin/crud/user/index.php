@@ -5,7 +5,7 @@ $list_members = getAllMembers();
 
 require_once '../../layout/header.php'; ?>
 
-<h1>Gestion des membres</h1>
+<h1>Gestion des utilisateurs</h1>
 
 <a href="create.php" class="btn btn-primary"><i class="fa fa-plus"></i> Ajouter</a>
 
