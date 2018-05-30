@@ -15,7 +15,7 @@ if ($_FILES["picture"]["error"] == 0) {
 }
 
 // Insertion des données en BDD
-insertMember($firstname, $lastname, $picture);
+insertUser($firstname, $lastname, $picture);
 
 // Redirection vers la liste
 header("Location: index.php");;
