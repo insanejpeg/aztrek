@@ -1,11 +1,11 @@
 <?php
 
-function getAllPicturesBySejour(int $id) {
+function getAllDepartBySejour(int $id) {
     /* @var $connection PDO */
     global $connection;
 
     $query = "SELECT *
-            FROM sejour_picture
+            FROM depart
             WHERE sejour_id = :id;";
 
     $stmt = $connection->prepare($query);

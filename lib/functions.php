@@ -1,4 +1,8 @@
 <?php
+if (!isset($_SESSION)){
+    session_start();
+}
+
 
 /**
  * Debugger une variable
@@ -13,6 +17,16 @@ function debug($var, bool $die = true) {
         die;
     }
 }
+
+
+function currentUser() {
+    if (isset($_SESSION["id"])) {
+        return getOneUser($_SESSION["id"]);
+    }
+    return null;
+}
+
+
 
 function getHeader(string $title, string $filename = "header.php") {
     require_once 'layout/' . $filename;
