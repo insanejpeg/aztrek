@@ -14,6 +14,8 @@ getHeader("séjours");
 
 <h2><?php echo $pays["label"]; ?></h2>
 
+<img src="upload/<?php echo $pays["picture"]; ?>" alt="<?php echo $pays["label"]; ?>">
+
 <?php foreach ($list_sejours as $sejour) : ?>
 <?php include 'include/sejour_inc.php'; ?>
 <?php endforeach; ?>
