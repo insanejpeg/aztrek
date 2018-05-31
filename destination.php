@@ -20,8 +20,4 @@ getHeader("pays");
     <?php endforeach; ?>
 </ul>
 
-
-
-
-
 <?php getFooter(); ?>

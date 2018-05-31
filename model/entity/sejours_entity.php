@@ -46,7 +46,7 @@ function insertSejour(string $title, string $picture, string $description, int $
         /* @var $connection PDO */
     global $connection;
 
-    $query = "INSERT INTO project (title, picture, description, duration, date_start, date_end, )
+    $query = "INSERT INTO sejour (title, picture, description, duration, date_start, date_end, )
                 VALUES (:title, :picture, :description, :duration, :date_start, :date_end, );";
 
     $stmt = $connection->prepare($query);
