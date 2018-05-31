@@ -17,7 +17,7 @@ require_once '../../layout/header.php';
     <div class="form-group">
         <label for="picture">Photo</label>
         <input type="file" id="picture" name="picture" accept="image/*" class="form-control">
-        <?php if (!empty($sejours["picture"])) : ?>
+        <?php if (!empty($sejour["picture"])) : ?>
             <img src="../../../upload/<?php echo $sejour["picture"]; ?>" class="img-thumbnail">
         <?php endif; ?>
     </div>

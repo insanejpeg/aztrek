@@ -29,8 +29,8 @@ require_once '../../layout/header.php';
                 <td><img src="<?php echo $picture; ?>" class="img-thumbnail"></td>
                
                 <td>
-                    <a href="update.php?id=<?php echo $sejours["id"]; ?>" class="btn btn-secondary"><i class="fa fa-edit"></i></a>
-                    <a href="delete_query.php?id=<?php echo $sejours["id"]; ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                    <a href="update.php?id=<?php echo $sejour["id"]; ?>" class="btn btn-secondary"><i class="fa fa-edit"></i></a>
+                    <a href="delete_query.php?id=<?php echo $sejour["id"]; ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -6,7 +6,7 @@ require_once '../../../model/database.php';
 $id = $_POST["id"];
 $title = $_POST["title"];
 
-$sejours = getOneEntity("sejours", $id);
+$sejour = getOneEntity("sejour", $id);
 $picture = !is_null($sejour["picture"]) ? $sejour["picture"] : ""; // Image présente avant update
 
 // Vérifier si l'utilisateur a uploadé un fichier
@@ -17,7 +17,7 @@ if ($_FILES["picture"]["error"] == 0) {
 }
 
 // Insertion des données en BDD
-updateSejour($id, $title, $picture);
+updateSejour($title, $picture, $description, $duration, $date_start, $date_end);
 
 // Redirection vers la liste
 header("Location: index.php");
